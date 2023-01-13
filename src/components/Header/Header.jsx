@@ -23,7 +23,7 @@ export default function Header() {
     setTerm('')
   }
 
-  return (
+  return ( 
     <div className="header">
       <Link to="/">
         <div className="logo">
@@ -47,7 +47,7 @@ export default function Header() {
               {loading ? (
                 <RotatingLines
                   strokeColor="grey"
-                  strokeWidth="5"
+                  strokeWidth="3"
                   animationDuration="1"
                   width="26"
                   visible={true}

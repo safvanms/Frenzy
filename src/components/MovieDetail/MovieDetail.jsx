@@ -30,7 +30,7 @@ export default function MovieDetail() {
     <div className="movie-section">
       {Object.keys(data).length === 0 ? 
     (<div className='loading'> Loading...  </div>  )
-    :
+    : 
     (
       <>
         <div className="section-left">
@@ -41,28 +41,28 @@ export default function MovieDetail() {
               <i className="star-icon">
                 <AiFillStar />
               </i>{' '}
-              :{data.imdbRating}
+              : {data.imdbRating}
             </span>
             <span>
               IMDB Voting
               <i className="icon">
                 <FaThumbsUp />
               </i>
-              : {data.imdbVotes}
+              :  {data.imdbVotes}
             </span>
             <span>
               Runtime
               <i className="icon">
                 <FaFilm />
               </i>
-              : {data.Runtime}
+              :  {data.Runtime}
             </span>
             <span>
               Year
               <i className="icon">
                 <AiFillCalendar />
               </i>
-              : {data.Year}
+              :  {data.Year}
             </span>
           </div>
           <div className="movie-plot">{data.Plot}</div>

@@ -41,14 +41,14 @@ export default function MovieListing() {
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
-        <h2>Movies</h2>
+        <h2>Movies </h2>
         <div className="movie-container">
          <Slider {...Settings}>{renderMovies}</Slider> 
           </div>
       </div>
 
       <div className="show-list">
-        <h2>Shows</h2>
+        <h2>Shows & Series</h2>
         <Slider {...Settings}>{renderShows}</Slider> 
       </div>
     </div>

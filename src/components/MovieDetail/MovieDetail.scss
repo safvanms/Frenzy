@@ -15,53 +15,133 @@
   display: flex;
 
   span {
-     margin-right: 20px;
+    margin-right: 20px;
   }
 }
 
-.star-icon{
-     font-size: 20px;
-     margin: 10px 5px 0px 4px;
-     color: #ff9e00;
+.star-icon {
+  font-size: 20px;
+  margin: 10px 5px 0px 4px;
+  color: #ff9e00;
 }
 
-.icon{
-     font-size: 18px;
-     margin: 10px 5px 0px 4px;
-     color: #fafafa;
+.icon {
+  font-size: 18px;
+  margin: 10px 5px 0px 4px;
+  color: #fafafa;
 }
 
-.movie-title{
-     font-size: 40px;
-     color: $font-primary;
+.movie-title {
+  font-size: 40px;
+  color: $font-primary;
 }
 
-.movie-plot{
-margin-top: 20px;
-line-height: 1.8rem;
+.movie-plot {
+  margin-top: 20px;
+  line-height: 1.8rem;
 }
 
-.movie-info>span:nth-child(1){
-padding: 10px 0px;
-color: $font-primary;
-font-weight: 600;
-width: 100px;
-display: inline-block;
+.movie-info > span:nth-child(1) {
+  padding: 10px 0px;
+  color: $font-primary;
+  font-weight: 600;
+  width: 100px;
+  display: inline-block;
 }
 
-.movie-info >  span {
-color: $font-secondary;
+.movie-info > span {
+  color: $font-secondary;
 }
-
 
 .section-right {
-     margin-left: 30px;
+  margin-left: 30px;
 }
 
-.section-right > img{
-     border-radius: 10px;
+.section-right > img {
+  border-radius: 10px;
 }
 
-.loading{
-     font-size: 25px;
+.loading {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .movie-section {
+    display: block;
+    justify-content: center;
+    padding: 40px 0px;
+    color: $font-primary;
+    font-weight: 400;
+  }
+
+  .movie-rating {
+    margin-top: 20px;
+    color: $font-secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+
+
+    
+
+    i {
+     margin-left: 5px;
+    }
+  }
+
+  .star-icon {
+    font-size: 15px;
+    margin: 10px 5px 0px 4px;
+    color: #ff9e00;
+  }
+
+  .icon {
+    font-size: 15px;
+    margin: 10px 5px 0px 4px;
+    color: #fafafa;
+  }
+
+  .movie-title {
+    font-size: 40px;
+    color: $font-primary;
+  }
+
+  .movie-plot {
+    margin-top: 30px;
+    line-height: 1.8rem;
+    padding: 5px;
+  }
+
+  .movie-info {
+    padding: 5px;
+  }
+
+  .movie-info > span:nth-child(1) {
+    padding: 10px 0px;
+    color: $font-primary;
+    font-weight: 600;
+    width: 100px;
+    display: inline-block;
+  }
+
+  .movie-info > span {
+    color: $font-secondary;
+  }
+
+  .section-right {
+    margin-left: -8px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-right > img {
+    border-radius: 10px;
+  }
+
+  .loading {
+    font-size: 25px;
+  }
 }
