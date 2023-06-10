@@ -57,6 +57,7 @@ const movieSlice = createSlice({
 
           },
           [fetchAsyncMovies.rejected]: () => {
+               loading = false;
                console.log('rejected');
                
           },
